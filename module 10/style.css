@@ -1,0 +1,28 @@
+h1{
+    color: green;
+    letter-spacing:20px ;
+    word-spacing: 20px;
+    text-shadow: 2px 2px 5px gray;
+}
+
+p{
+    text-indent: 50px;
+    text-align: center;
+    text-transform: uppercase;
+     writing-mode: horizontal-tb;
+    
+}
+
+h2{
+    text-decoration: overline;
+}
+
+h3{
+    text-decoration: line-through;
+}
+
+h4{
+    text-decoration: underline;
+    font-family:  font-family: 'Times New Roman',Times, serif;
+   
+}
