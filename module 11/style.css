@@ -1,0 +1,35 @@
+ul{
+     list-style-type: circle;
+    padding: 15px
+    margin-left: 30px;
+    background-color: blamchedalmond;
+    border: 2px solid gray
+
+}
+
+ol{
+    list-style-type: upper-roman;
+    padding: 15%;
+    margin-top: 10px;
+   font-size: 20px;
+}
+
+table{
+    border-collapse: collapse;
+}
+
+td,th{
+    border: 1px solid #eee;
+    padding:15px;
+}
+
+tbody tr:nth-child(odd){
+    background-color: #ff33cc;
+}
+
+tbody tr:nth-child(even){
+    background-color: #ee2
+}
+
+  
+
