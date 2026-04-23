@@ -1,0 +1,45 @@
+article p{
+    background-color: powderblue
+    color:white;
+    padding: 20px;
+}
+
+article > p {
+    background: blue;
+}
+
+article ~ p{
+    background-color: palevioletred;
+    color: white;
+    padding: 20px;
+}
+article + p {
+    background-color: aqua; 
+}
+
+h3:first-child{
+    background-color: gray;
+    color: white;
+}
+
+input:in-range{
+    border: 3px solid green;
+}
+
+input:out-of-range{
+    border:3px solid red;
+}
+
+input:required{
+    background-color: #9ee5f0;
+}
+
+input:focus{
+    background-color: khaki;
+}
+
+span:first-of-type{
+    background-color: black;
+    color: white;
+    padding: 10px;
+}
