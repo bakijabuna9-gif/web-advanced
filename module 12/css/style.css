@@ -1,45 +1,99 @@
 article p{
-    background-color: powderblue
-    color:white;
+    background-color: rgb(233, 233, 132);
+    color: white;
     padding: 20px;
 }
+
 
 article > p {
-    background: blue;
+    background: lightgreen ;
 }
 
+
 article ~ p{
-    background-color: palevioletred;
+      background-color: pink;
     color: white;
     padding: 20px;
 }
-article + p {
-    background-color: aqua; 
+article + p{
+    background: paleturquoise;
 }
 
+
 h3:first-child{
-    background-color: gray;
+    background-color: lightskyblue;
     color: white;
 }
 
+
 input:in-range{
-    border: 3px solid green;
+    border: 3px solid burlywood;
 }
 
+
 input:out-of-range{
-    border:3px solid red;
+    border:3px solid  salmon;
 }
+
 
 input:required{
     background-color: #9ee5f0;
 }
 
+
+
 input:focus{
-    background-color: khaki;
+    background-color: palevioletred;
 }
+
 
 span:first-of-type{
     background-color: black;
     color: white;
     padding: 10px;
+}
+
+input:invalid{
+    border: 2px solid red;
+}
+
+input:valid{
+    border: 2px solid green;
+}
+
+input{
+    padding: 8px;
+    margin: 10px;
+}
+
+p::first-line{
+    color:blue;
+}
+
+p::first-letter{
+    color:red;
+    font-size: 30px;
+}
+
+/*.b::before{
+content: "";
+}
+
+.b::after{
+content:"";
+
+
+}
+*/
+
+::selection{
+    background: yellow;
+    color: black;
+}
+
+.box{
+    background-color: orange;
+    padding: 20px;
+    margin-top: 20px;
+    opacity: 0.5;
 }
