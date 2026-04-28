@@ -1,0 +1,18 @@
+div#static{
+    position: static;
+    border: 3px solid rosybrown;
+    width:250pc;
+    height: 250px;
+    padding:20px;
+}
+
+div#static{
+    position: static;
+    border: 3px solid rosybrown;
+    width:250pc;
+    height: 250px;
+    padding:20px;
+    left: 200px;
+    top: 
+}
+
