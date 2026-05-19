@@ -1,0 +1,64 @@
+:root{
+    --primary-color:#06206a;
+    --secondary-color:#fff;
+    --padding:20px;
+}
+
+h1{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--padding);
+}
+
+p{
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    padding: var(--padding);
+}
+
+#exalple-one{
+    border-radius: 10px;
+    background: #BADA55;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#exalple-two{
+    border-radius: 10px;
+    border: #BADA55;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+}
+
+#exalple-three{
+    border-radius: 10px;
+
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    background: url(/line.avif);
+}
+
+#example-four{
+    margin: 10px;
+    width: 150px;
+    height:150px;
+    border-radius: 5px 60px 5px;
+    background: #BADA55;
+}
+
+body{
+    counter-reset: number;
+}
+
+h2::before{
+    counter-increment: number;
+    content: counter(number);
+    background-color: white;
+    border-radius: 5px 12px;
+    color: pink;
+    font-weight: bold;
+    margin: 10px;
+}
