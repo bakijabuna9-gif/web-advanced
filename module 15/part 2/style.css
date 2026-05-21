@@ -1,64 +1,97 @@
 :root{
-    --primary-color:#06206a;
+    --primary-color: #06206a;
     --secondary-color:#fff;
     --padding:20px;
 }
 
+
 h1{
-    background-color: var(--primary-color);
+    background-color: var(--primary-color) ;
     color: var(--secondary-color);
     padding: var(--padding);
 }
+
 
 p{
-    background-color: var(--primary-color);
+     background-color: var(--primary-color) ;
     color: var(--secondary-color);
     padding: var(--padding);
 }
 
-#exalple-one{
+
+#example-one{
     border-radius: 10px;
     background: #BADA55;
     margin: 10px;
     width: 150px;
     height: 150px;
+    
 }
 
-#exalple-two{
+#example-two{
     border-radius: 10px;
-    border: #BADA55;
+    border: 3px solid #BADA55;
     margin: 10px;
     width: 150px;
     height: 150px;
+    
 }
 
-#exalple-three{
-    border-radius: 10px;
 
-    margin: 10px;
-    width: 150px;
-    height: 150px;
-    background: url(/line.avif);
+#example-three {
+  margin: 10px;
+  width: 150px;
+  height: 150px;
+  border-radius: 20px;
+  background: url(../line.avif); 
 }
+
 
 #example-four{
     margin: 10px;
     width: 150px;
-    height:150px;
+    height: 150px;
     border-radius: 5px 60px 5px;
+    background: #BADA55;
+    
+}
+
+#example-five{
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px / 30px ;
     background: #BADA55;
 }
 
+#example-six{
+     margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 30px / 10px ;
+    background: #BADA55;
+}
+    
+
 body{
-    counter-reset: number;
+    margin: 10px;
+    width: 150px;
+    height: 150px;
+    border-radius: 10px / 30px ;
+    background: #BADA55;
+ 
 }
 
+
 h2::before{
-    counter-increment: number;
+    counter-increment:number ;
     content: counter(number);
     background-color: white;
-    border-radius: 5px 12px;
-    color: pink;
+    border-radius: 50%;
+    padding: 5px 12px;
+    color: aqua;
     font-weight: bold;
     margin: 10px;
 }
+
+
