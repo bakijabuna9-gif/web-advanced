@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyGlow PRO - Contact Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Beauty<span>Glow</span> PRO</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a href="about.html">About Us</a>
+        <a class="active" href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main class="contact-page">
+
+    <section class="contact-box">
+
+        <div class="contact-info">
+            <p class="small-title">GET IN TOUCH</p>
+            <h2>We would love to hear from you</h2>
+
+            <p class="contact-text">
+                Have a question about our beauty products? Send us a message
+                and we will reply as soon as possible.
+            </p>
+
+            <div class="info-item">
+                <span>📧</span>
+                <div>
+                    <h3>Email</h3>
+                    <p>beautyglow@gmail.com</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <span>📞</span>
+                <div>
+                    <h3>Phone</h3>
+                    <p>+383 44 123 456</p>
+                </div>
+            </div>
+
+            <div class="info-item">
+                <span>📍</span>
+                <div>
+                    <h3>Location</h3>
+                    <p>Prishtina, Kosovo</p>
+                </div>
+            </div>
+        </div>
+
+        <form class="contact-form" onsubmit="sendMessage(event)">
+            <h2>Send a Message</h2>
+
+            <label for="name">Your Name</label>
+            <input type="text" id="name" placeholder="Enter your name" required>
+
+            <label for="email">Your Email</label>
+            <input type="email" id="email" placeholder="Enter your email" required>
+
+            <label for="subject">Subject</label>
+            <input type="text" id="subject" placeholder="What is this about?" required>
+
+            <label for="message">Your Message</label>
+            <textarea id="message" rows="6" placeholder="Write your message here..." required></textarea>
+
+            <button type="submit">Send Message</button>
+
+            <p id="result"></p>
+        </form>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 BeautyGlow PRO | All Rights Reserved</p>
+</footer>
+
+<script>
+function sendMessage(event){
+    event.preventDefault();
+
+    document.getElementById("result").innerHTML =
+        "✓ Thank you! Your message has been sent successfully.";
+
+    document.getElementById("result").classList.add("success-message");
+
+    event.target.reset();
+}
+</script>
+
+</body>
+</html>

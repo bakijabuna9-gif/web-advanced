@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BeautyGlow PRO - About Us</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header>
+    <h1>Beauty<span>Glow</span> PRO</h1>
+
+    <nav>
+        <a href="index.html">Home</a>
+        <a href="products.html">Products</a>
+        <a class="active" href="about.html">About Us</a>
+        <a href="contact.html">Contact Us</a>
+    </nav>
+</header>
+
+<main class="about-page">
+
+    <section class="about-hero">
+
+        <div class="about-text">
+            <p class="small-title">ABOUT BEAUTYGLOW PRO</p>
+
+            <h2>Beauty that makes you feel confident.</h2>
+
+            <p>
+                BeautyGlow PRO is an online beauty and skincare store created
+                for people who love makeup, skincare and self-care.
+            </p>
+
+            <p>
+                Our goal is to offer modern beauty products at affordable prices.
+                We believe that everyone deserves to feel beautiful, confident
+                and comfortable in their own skin.
+            </p>
+
+            <button onclick="showInfo()">Learn More</button>
+
+            <p id="about-result"></p>
+        </div>
+
+        <div class="about-image">
+            <div class="about-image-content">
+                <p>BEAUTY IS FOR EVERYONE</p>
+                <h3>Glow with confidence</h3>
+            </div>
+        </div>
+
+    </section>
+
+    <section class="about-stats">
+
+        <div class="stat">
+            <h3>10+</h3>
+            <p>Beauty Products</p>
+        </div>
+
+        <div class="stat">
+            <h3>100%</h3>
+            <p>Customer Care</p>
+        </div>
+
+        <div class="stat">
+            <h3>2026</h3>
+            <p>Created With Love</p>
+        </div>
+
+    </section>
+
+    <section class="why-us">
+
+        <p class="small-title">WHY CHOOSE US</p>
+        <h2>Our Beauty Promise</h2>
+
+        <div class="why-grid">
+
+            <div class="why-card">
+                <span>✨</span>
+                <h3>Quality Products</h3>
+                <p>We choose beauty and skincare products that help you feel your best.</p>
+            </div>
+
+            <div class="why-card">
+                <span>💗</span>
+                <h3>Affordable Prices</h3>
+                <p>Beauty should be accessible, so we offer products at friendly prices.</p>
+            </div>
+
+            <div class="why-card">
+                <span>🌸</span>
+                <h3>Made for You</h3>
+                <p>Our collection includes makeup, skincare, haircare and fragrance.</p>
+            </div>
+
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>© 2026 BeautyGlow PRO | All Rights Reserved</p>
+</footer>
+
+<script>
+function showInfo(){
+    document.getElementById("about-result").innerHTML =
+        "✓ Thank you for learning more about BeautyGlow PRO!";
+
+    document.getElementById("about-result").classList.add("about-success");
+}
+</script>
+
+</body>
+</html>
