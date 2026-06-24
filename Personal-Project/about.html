@@ -8,15 +8,27 @@
 </head>
 <body>
 
-<header>
-    <h1>Beauty<span>Glow</span> PRO</h1>
+<header class="page-header">
 
-    <nav>
-        <a href="index.html">Home</a>
-        <a href="products.html">Products</a>
-        <a class="active" href="about.html">About Us</a>
-        <a href="contact.html">Contact Us</a>
+    <nav class="navbar">
+        <a class="logo" href="index.html">Beauty<span>Glow</span></a>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <a href="products.html">Products</a>
+            <a class="active" href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
+        </div>
+
+        <a class="shop-btn" href="products.html">Shop Now</a>
     </nav>
+
+    <div class="page-title">
+        <p class="eyebrow">ABOUT BEAUTYGLOW PRO</p>
+        <h1>About Us</h1>
+        <p>Learn more about our beauty story.</p>
+    </div>
+
 </header>
 
 <main class="about-page">
@@ -104,14 +116,15 @@
 </main>
 
 <footer>
-    <p>© 2026 BeautyGlow PRO | All Rights Reserved</p>
+    <div class="footer-logo">Beauty<span>Glow</span> PRO</div>
+    <p>Glow every day. Feel confident every day.</p>
+    <p>© 2026 BeautyGlow PRO — All Rights Reserved</p>
 </footer>
 
 <script>
 function showInfo(){
     document.getElementById("about-result").innerHTML =
-        "✓ Thank you for learning more about BeautyGlow PRO!";
-
+    "✓ Thank you for learning more about BeautyGlow PRO!";
     document.getElementById("about-result").classList.add("about-success");
 }
 </script>
