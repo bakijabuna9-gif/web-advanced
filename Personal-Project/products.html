@@ -3,165 +3,205 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Products - BeautyGlow PRO</title>
+    <title>BeautyGlow PRO | Products</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
 <header class="page-header">
-
     <nav class="navbar">
-        <h1 class="logo">Beauty<span>Glow</span></h1>
+        <a class="logo" href="index.html">Beauty<span>Glow</span></a>
 
         <div class="nav-links">
             <a href="index.html">Home</a>
-            <a href="products.html">Products</a>
-            <a href="about.html">About</a>
-            <a href="contact.html">Contact</a>
+            <a class="active" href="products.html">Products</a>
+            <a href="about.html">About Us</a>
+            <a href="contact.html">Contact Us</a>
         </div>
 
         <a class="shop-btn" href="products.html">Shop Now</a>
     </nav>
 
     <div class="page-title">
-        <p class="small-text">BEAUTYGLOW COLLECTION</p>
-        <h2>Our Products</h2>
+        <p class="eyebrow">BEAUTYGLOW COLLECTION</p>
+        <h1>Our Products</h1>
+        <p>Find your next beauty favorite.</p>
     </div>
-
 </header>
 
 <main class="products-page">
+    <section class="products-toolbar">
+        <p>10 products available</p>
 
-    <section class="product-section only-products">
-
-        <p class="small-text">SHOP OUR COLLECTION</p>
-        <h2>Find Your Beauty Favorites</h2>
-
-        <div class="products">
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="blush.avif" alt="Soft Pink Blush">
-                    <span class="badge">NEW</span>
-                </div>
-                <h3>Soft Pink Blush</h3>
-                <p class="price">€12</p>
-                <button onclick="alert('Blush added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="lipstick.webp" alt="Velvet Lipstick">
-                    <span class="badge">HOT</span>
-                </div>
-                <h3>Velvet Lipstick</h3>
-                <p class="price">€10</p>
-                <button onclick="alert('Lipstick added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="mascara.png" alt="Volume Mascara">
-                    <span class="badge">TOP</span>
-                </div>
-                <h3>Volume Mascara</h3>
-                <p class="price">€14</p>
-                <button onclick="alert('Mascara added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="foundation.webp" alt="Silk Foundation">
-                    <span class="badge">SALE</span>
-                </div>
-                <h3>Silk Foundation</h3>
-                <p class="price">€20</p>
-                <button onclick="alert('Foundation added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="consealer.avif" alt="Perfect Concealer">
-                </div>
-                <h3>Perfect Concealer</h3>
-                <p class="price">€11</p>
-                <button onclick="alert('Concealer added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="cleanser.webp" alt="Fresh Cleanser">
-                </div>
-                <h3>Fresh Cleanser</h3>
-                <p class="price">€12</p>
-                <button onclick="alert('Cleanser added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="serum.jpg" alt="Glow Serum">
-                </div>
-                <h3>Glow Serum</h3>
-                <p class="price">€22</p>
-                <button onclick="alert('Serum added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="lipbalm.avif" alt="Hydrating Lip Balm">
-                </div>
-                <h3>Hydrating Lip Balm</h3>
-                <p class="price">€8</p>
-                <button onclick="alert('Lip Balm added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="shampo.avif" alt="Shampoo">
-                </div>
-                <h3>Silky Shampoo</h3>
-                <p class="price">€14</p>
-                <button onclick="alert('Shampoo added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="parfume.webp" alt="Perfume">
-                </div>
-                <h3>Luxury Perfume</h3>
-                <p class="price">€30</p>
-                <button onclick="alert('Perfume added to cart!')">Add to Cart</button>
-            </article>
-
-             <article class="product">
-                <div class="product-image">
-                    <img src="FaceCream.jpg" alt="Perfume">
-                </div>
-                <h3>Face cream</h3>
-                <p class="price">€30</p>
-                <button onclick="alert('Cream added to cart!')">Add to Cart</button>
-            </article>
-
-            <article class="product">
-                <div class="product-image">
-                    <img src="powder.webp" alt="Perfume">
-                </div>
-                <h3>Setting Powder</h3>
-                <p class="price">€30</p>
-                <button onclick="alert('Powder added to cart!')">Add to Cart</button>
-            </article>
-
+        <div class="filter-buttons">
+            <button class="filter-btn active-filter" onclick="filterProducts('all', this)">All</button>
+            <button class="filter-btn" onclick="filterProducts('makeup', this)">Makeup</button>
+            <button class="filter-btn" onclick="filterProducts('skincare', this)">Skincare</button>
+            <button class="filter-btn" onclick="filterProducts('hair', this)">Hair & Fragrance</button>
         </div>
-
     </section>
 
+    <section class="products-grid">
+
+        <article class="product-card" data-category="makeup">
+            <div class="product-image">
+                <img src="blush.avif" alt="Soft Pink Blush">
+                <span class="badge">NEW</span>
+            </div>
+            <div class="product-info">
+                <p class="product-category">MAKEUP</p>
+                <h3>Soft Pink Blush</h3>
+                <p class="price">€12</p>
+                <button onclick="addToCart('Soft Pink Blush')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="makeup">
+            <div class="product-image">
+                <img src="lipstick.webp" alt="Velvet Lipstick">
+                <span class="badge">HOT</span>
+            </div>
+            <div class="product-info">
+                <p class="product-category">MAKEUP</p>
+                <h3>Velvet Lipstick</h3>
+                <p class="price">€10</p>
+                <button onclick="addToCart('Velvet Lipstick')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="makeup">
+            <div class="product-image">
+                <img src="mascara.png" alt="Volume Mascara">
+                <span class="badge">TOP</span>
+            </div>
+            <div class="product-info">
+                <p class="product-category">MAKEUP</p>
+                <h3>Volume Mascara</h3>
+                <p class="price">€14</p>
+                <button onclick="addToCart('Volume Mascara')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="makeup">
+            <div class="product-image">
+                <img src="foundation.webp" alt="Silk Foundation">
+                <span class="badge">SALE</span>
+            </div>
+            <div class="product-info">
+                <p class="product-category">MAKEUP</p>
+                <h3>Silk Foundation</h3>
+                <p class="price">€20</p>
+                <button onclick="addToCart('Silk Foundation')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="makeup">
+            <div class="product-image">
+                <img src="consealer.avif" alt="Perfect Concealer">
+            </div>
+            <div class="product-info">
+                <p class="product-category">MAKEUP</p>
+                <h3>Perfect Concealer</h3>
+                <p class="price">€11</p>
+                <button onclick="addToCart('Perfect Concealer')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="skincare">
+            <div class="product-image">
+                <img src="cleanser.webp" alt="Fresh Cleanser">
+            </div>
+            <div class="product-info">
+                <p class="product-category">SKINCARE</p>
+                <h3>Fresh Cleanser</h3>
+                <p class="price">€12</p>
+                <button onclick="addToCart('Fresh Cleanser')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="skincare">
+            <div class="product-image">
+                <img src="serum.jpg" alt="Glow Serum">
+            </div>
+            <div class="product-info">
+                <p class="product-category">SKINCARE</p>
+                <h3>Glow Serum</h3>
+                <p class="price">€22</p>
+                <button onclick="addToCart('Glow Serum')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="skincare">
+            <div class="product-image">
+                <img src="lipbalm.avif" alt="Hydrating Lip Balm">
+            </div>
+            <div class="product-info">
+                <p class="product-category">SKINCARE</p>
+                <h3>Hydrating Lip Balm</h3>
+                <p class="price">€8</p>
+                <button onclick="addToCart('Hydrating Lip Balm')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="hair">
+            <div class="product-image">
+                <img src="shampo.avif" alt="Silky Shampoo">
+            </div>
+            <div class="product-info">
+                <p class="product-category">HAIR CARE</p>
+                <h3>Silky Shampoo</h3>
+                <p class="price">€14</p>
+                <button onclick="addToCart('Silky Shampoo')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="hair">
+            <div class="product-image">
+                <img src="parfume.webp" alt="Luxury Perfume">
+            </div>
+            <div class="product-info">
+                <p class="product-category">FRAGRANCE</p>
+                <h3>Luxury Perfume</h3>
+                <p class="price">€30</p>
+                <button onclick="addToCart('Luxury Perfume')">Add to Cart</button>
+            </div>
+        </article>
+
+         <article class="product-card" data-category="hair">
+            <div class="product-image">
+                <img src="eyeshadow.webp" alt="Luxury Perfume">
+            </div>
+            <div class="product-info">
+                <p class="product-category">FRAGRANCE</p>
+                <h3> Eye Shadow</h3>
+                <p class="price">€30</p>
+                <button onclick="addToCart('Eye Shadow')">Add to Cart</button>
+            </div>
+        </article>
+
+        <article class="product-card" data-category="hair">
+            <div class="product-image">
+                <img src="toner.avif" alt="Luxury Perfume">
+            </div>
+            <div class="product-info">
+                <p class="product-category">FRAGRANCE</p>
+                <h3>Toner</h3>
+                <p class="price">€30</p>
+                <button onclick="addToCart('Toner')">Add to Cart</button>
+            </div>
+        </article>
+
+    </section>
 </main>
 
+<div id="toast"></div>
+
 <footer>
-    <h2>BeautyGlow PRO</h2>
+    <div class="footer-logo">Beauty<span>Glow</span> PRO</div>
     <p>Glow every day. Feel confident every day.</p>
     <p>© 2026 BeautyGlow PRO — All Rights Reserved</p>
 </footer>
 
+<script src="script.js"></script>
 </body>
 </html>
